@@ -1,0 +1,2 @@
+include ':app'
+include ':etras:SlidingMenu-master/library'

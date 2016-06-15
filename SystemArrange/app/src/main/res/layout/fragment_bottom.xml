@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wuhongxu.UI.BottomFragment">
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#30000000"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/path_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:autoText="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="path"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dectory_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message_layout"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/layout_shadow"
+        android:visibility="gone"></ListView>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/reName_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="重命名" />
+
+        <Button
+            android:id="@+id/copy_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="复制" />
+
+        <Button
+            android:id="@+id/move_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="移动" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/sure_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="取消" />
+    </LinearLayout>
+
+
+</RelativeLayout>
